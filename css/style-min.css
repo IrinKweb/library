@@ -1,0 +1,186 @@
+@media (max-width:1024px) {
+
+    /* top padding for anchors if we fix the menu */
+/*
+    #welcone:before,
+    #about:before,
+    #favorites:before,
+    #coffeeShop:before,
+    #contacts:before,
+    #libraryCard:before {
+        display: block;
+        content: " ";
+        margin-top: -90px;
+        height: 90px;
+        visibility: hidden;
+        position: relative;
+        z-index: -1;
+      } */
+
+    .container {
+        min-width: 768px;
+    }
+    .heading {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .wrapper {
+        width: 94.79%;
+    }
+
+    .dropbtn {
+        z-index: 10;
+        margin-right: 27px;
+    }
+
+    .dropdown-content {
+        right: 30px;
+    }
+
+    .menu-btn {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        left: 7px;
+    }
+    .menu-btn span {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FFFFFF;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 11px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 9px);
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 332px;
+        height: 570px;
+        padding-top: 100px;
+        background: #000000;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+    .menu.active {
+        transform: translateX(0%);
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 118px;
+        margin: 0 auto;
+        text-align: center;
+        gap: 30px;
+    }
+    .menu li {
+        list-style-type: none;
+        margin: 0;
+    }
+    .menu li:last-child {
+        margin-right: 0;
+    }
+
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
+    }
+
+    /* section welcom */
+    /* #welcome {
+        padding-top: 310px;
+    } */
+
+    /* .welcome-plashka {
+        width: 78.13%;
+    } */
+
+    /* section about */
+
+
+     /* section favorites */
+    .favorite__season {
+        justify-content: center;
+    }
+
+    .favorites-items__book-text:nth-child(2) {
+        margin-bottom: 100px;
+    }
+    .season {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: #FFFFFF;
+    }
+
+    /* section coffeeShop */
+    .coffeeShop-content__items {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .coffee-and-tea .items-list {
+        justify-content: flex-start;
+    }
+
+    /* section contacts */
+    .digital__block-contacts {
+        flex-direction: column;
+        gap:100px;
+    }
+    .digital-info:last-child {
+        padding-bottom: 0;
+    }
+    .digital-map {
+        margin: 0 auto;
+    }
+
+    /* section libraryCard */
+    .cards-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-form {
+        /* width: 78.12%; */
+        margin: 0 auto;
+    }
+
+    input[type="text"], [type="number"] {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .get-card {
+        width: 82.41%;
+        margin: 0 auto;
+        align-items: center;
+        gap: 40px;
+    }
+    .get-card-text {
+        text-align: center;
+    }
+    .reader-form {
+        width: 92.85%;
+        margin: 0 auto;
+    }
+}
